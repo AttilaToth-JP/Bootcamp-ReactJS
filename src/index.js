@@ -1,14 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+const fName = "Attila";
+const lName = "Toth";
+const luckyNr = 37;
+
 ReactDOM.render(
   <div>
-    <h1>Top three bands I loved as a teenager</h1>
-    <ul>
-      <li>Kispal es a Borz</li>
-      <li>The Cure</li>
-      <li>The Doors</li>
-    </ul>
+    <h1>
+      Hello {`${fName} ${lName}`} / {fName + " " + lName}!
+    </h1>
+    <p>Your lucky number is {luckyNr}.</p>
   </div>,
   document.getElementById("root")
 );
