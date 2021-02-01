@@ -1,16 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const fName = "Attila";
-const lName = "Toth";
-const luckyNr = 37;
+const name = "T-bug";
+
+function currentYear() {
+  return new Date().getFullYear();
+}
 
 ReactDOM.render(
   <div>
-    <h1>
-      Hello {`${fName} ${lName}`} / {fName + " " + lName}!
-    </h1>
-    <p>Your lucky number is {luckyNr}.</p>
+    <p>Created by {name}.</p>
+    <p>Copyright {currentYear()}</p>
   </div>,
   document.getElementById("root")
 );
+
+//Angela's solution
+// const currentDate = new Date();
+// const year = currentDate.getFullYear();
