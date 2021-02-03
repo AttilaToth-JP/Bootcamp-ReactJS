@@ -3,11 +3,23 @@ import ReactDOM from "react-dom";
 
 const img = "https://picsum.photos/300";
 
+const customStyle = {
+  color: "red",
+  fontSize: "20px",
+  border: "1px solid black"
+};
+
 ReactDOM.render(
   <div>
-    <h1 className="heading" contentEditable="true" spellCheck="false">
+    <h1
+      style={{ fontWeight: "normal" }}
+      className="heading"
+      contentEditable="true"
+      spellCheck="false"
+    >
       Top three bands I loved as a teenager
     </h1>
+    <h2 style={customStyle}>Test</h2>
     <div>
       <img
         className="band-img"
