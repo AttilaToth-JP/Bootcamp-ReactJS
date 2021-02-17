@@ -1,7 +1,16 @@
 import React from "react";
-import Heading from "./Heading";
 
 function App() {
-  return <Heading />;
+  return (
+    <div className="container">
+      <h1>Hello</h1>
+      <form className="form">
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  );
 }
+
 export default App;
