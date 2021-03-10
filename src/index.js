@@ -1,42 +1,18 @@
-// import animals from "./data";
-
-// const [cat, dog] = animals;
-
-// const { name, sound } = cat;
-
-// CHALLENGE: uncomment the code below and see the car stats rendered
 import React from "react";
 import ReactDOM from "react-dom";
-import cars from "./practice";
+import App from "./components/App";
 
-const [honda, tesla] = cars;
-const {
-  coloursByPopularity: [teslaTopColour],
-  speedStats: { topSpeed: teslaTopSpeed }
-} = tesla;
-const {
-  coloursByPopularity: [hondaTopColour],
-  speedStats: { topSpeed: hondaTopSpeed }
-} = honda;
+ReactDOM.render(<App />, document.getElementById("root"));
 
-console.log(tesla);
+//CHALLENGE: I have extracted the Input Area, including the <input> and
+//<button> elements into a seperate Component called InputArea.
+//Your job is to make the app work as it did before but this time with the
+//InputArea as a seperate Component.
 
-ReactDOM.render(
-  <table>
-    <tr>
-      <th>Brand</th>
-      <th>Top Speed</th>
-    </tr>
-    <tr>
-      <td>{tesla.model}</td>
-      <td>{teslaTopSpeed}</td>
-      <td>{teslaTopColour}</td>
-    </tr>
-    <tr>
-      <td>{honda.model}</td>
-      <td>{hondaTopSpeed}</td>
-      <td>{hondaTopColour}</td>
-    </tr>
-  </table>,
-  document.getElementById("root")
-);
+// DO NOT: Modify the ToDoItem.jsx
+// DO NOT: Move the input/button elements back into the App.jsx
+
+//Hint 1: You will need to think about how to manage the state of the input element
+//in InputArea.jsx.
+//Hint 2: You will need to think about how to pass the input value back into
+//the addItem() function in App.jsx.
